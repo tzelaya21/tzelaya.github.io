@@ -1,0 +1,70 @@
+.mainContainer {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem 1rem;
+}
+
+.subtitle {
+  max-width: 400px;
+  color: var(--muted);
+}
+
+.icons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.otherAccountsText {
+  padding-top: 2rem;
+  padding-bottom: 0.8rem;
+}
+
+.icons img {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.icons img:hover {
+  opacity: .6;
+}
+
+.formContainer {
+  background-color: var(--lighter-blue);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-radius: 6px;
+}
+
+.inputField {
+  background-color: #1b2e43;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  resize: none;
+}
+
+.inputField::placeholder {
+  color: rgb(197, 197, 197);
+}
+
+.sendMailButton {
+  padding: 0.6rem 0;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: background-color .2s ease-out;
+}
+
+.sendMailButton:hover {
+  background-color: #1b2e43;
+  color: white;
+}

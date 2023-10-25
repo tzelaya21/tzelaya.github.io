@@ -1,0 +1,46 @@
+.qualitiesContainer {
+  padding: 6rem 0;
+}
+
+.qualities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quality {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.4rem;
+  background-color: var(--lighter-blue);
+  overflow: hidden;
+}
+
+.qualityText {
+  z-index: 10;
+}
+
+.dots {
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  width: 200px;
+  height: 200px;
+  z-index: 9;
+  opacity: 0.4;
+  transition: scale .2s ease-in-out;
+}
+
+.quality:hover .dots{
+  scale: 1.8;
+}
+
+.quality .title {
+  padding-bottom: 1rem;
+}
+
+.quality .description {
+  color: var(--muted);
+}

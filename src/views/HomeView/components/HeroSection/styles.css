@@ -1,0 +1,83 @@
+.heroContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1rem;
+  padding: 6rem 0;
+}
+
+.leftColumnContent,
+.rightColumnContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightColumnContent {
+  align-items: flex-end;
+}
+
+.personName {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.personDescription {
+  font-size: 1.2rem;
+  padding: 1rem 0 2rem 0;
+  color: var(--muted);
+}
+
+.personImage {
+  width: 80%;
+  height: 100%;
+  border: 1px solid #fff;
+  object-fit: cover;
+}
+
+.letsTalkButton {
+  width: fit-content;
+}
+
+.letsTalkButton svg {
+  outline: none;
+}
+
+.letsTalkContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.letsTalkText {
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+@media (max-width: 992px) {
+  .heroContainer {
+    padding: 6rem 0;
+    gap: 4rem;
+  }
+
+  .rightColumnContent {
+    align-items: center;
+  }
+
+  .personName {
+    font-size: 2rem;
+  }
+
+  .personDescription {
+    font-size: 1rem;
+  }
+
+  .personImage {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroContainer {
+    padding: 3rem 0;
+  }
+}

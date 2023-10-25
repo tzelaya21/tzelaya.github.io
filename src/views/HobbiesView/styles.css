@@ -1,0 +1,38 @@
+.mainContainer {
+  padding: 4rem 0;
+}
+
+.hobbiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem 1rem;
+  padding-top: 1rem;
+}
+
+.hobbie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hobbieTitle {
+  padding-bottom: .4rem;
+}
+
+.hobbieDesc {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.hobbieImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hobbieImage img {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
