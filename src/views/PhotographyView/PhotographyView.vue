@@ -24,7 +24,6 @@ export default {
     <ContainerLayout>
       <section class="mainContainer">
         <SectionTitle>Bit of a Photographer too! &#128513;</SectionTitle>
-        <p class="headerDesc">Here are some of my best takes</p>
         <div class="photosGrid">
           <div v-for="(photo, index) in photos" :key="index" class="photo">
             <div class="photoImage">

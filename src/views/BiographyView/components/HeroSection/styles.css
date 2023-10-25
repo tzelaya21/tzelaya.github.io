@@ -8,6 +8,26 @@
   color: var(--muted);
 }
 
+.resumeButton {
+  margin-top: 2rem;
+  width: fit-content;
+}
+
+.resumeButton svg {
+  outline: none;
+}
+
+.resumeContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resumeText {
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
 @media (max-width: 992px) {
   .mainContainer {
     width: 100%;

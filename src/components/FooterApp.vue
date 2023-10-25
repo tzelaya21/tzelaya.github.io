@@ -8,7 +8,7 @@ export default {
 <template>
   <footer class="footerContainer">
     <ContainerLayout>
-      <p>Made with &#10084; by Olivia Queen</p>
+      <p>Made with &#10084; by Telma Zelaya</p>
     </ContainerLayout>
   </footer>
 </template>

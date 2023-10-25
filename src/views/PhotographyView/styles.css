@@ -2,11 +2,8 @@
   padding: 4rem 0;
 }
 
-.headerDesc {
-  padding-bottom: 2rem;
-}
-
 .photosGrid {
+  padding-top: 2rem;
   column-count: 3;
 }
 

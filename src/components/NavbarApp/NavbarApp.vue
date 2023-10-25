@@ -28,7 +28,7 @@ export default {
     <nav class="navContainer">
         <ContainerLayout>
             <div class="contentContainer">
-                <h2>Olivia <span class="text-color-primary">Queen</span></h2>
+                <h2>Telma <span class="text-color-primary">Zelaya</span></h2>
                 <ul class="links" :class="openHeader ? 'open' : undefined">
                     <li class="linkWrapper">
                         <router-link to="/" class="link">

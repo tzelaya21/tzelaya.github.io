@@ -32,16 +32,16 @@ export default {
           </p>
           <p class="otherAccountsText">My other social accounts:</p>
           <div class="icons">
-            <a href="https://facebook.com" target="_blank" class="icon">
+            <a href="https://facebook.com/telmazelaya" target="_blank" class="icon">
               <img src="@/assets/icons/facebookIcon.svg" alt="Facebook">
             </a>
-            <a href="https://x.com" target="_blank" class="icon">
+            <a href="https://twitter.com/telmazelaya" target="_blank" class="icon">
               <img src="@/assets/icons/twitterIcon.svg" alt="Twitter">
             </a>
-            <a href="https://linkedin.com" target="_blank" class="icon">
+            <a href="https://www.linkedin.com/in/telmazelaya" target="_blank" class="icon">
               <img src="@/assets/icons/linkedinIcon.svg" alt="Linkedin">
             </a>
-            <a href="https://instagram.com" target="_blank" class="icon">
+            <a href="https://instagram.com/telmazelaya" target="_blank" class="icon">
               <img src="@/assets/icons/instagramIcon.svg" alt="Instagram">
             </a>
           </div>
