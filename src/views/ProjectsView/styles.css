@@ -20,6 +20,18 @@
   object-fit: cover;
   aspect-ratio: 4/3;
   border-radius: 12px;
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+}
+
+.projectTitle {
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+}
+
+.projectTitle:hover,
+.projectImage img:hover {
+  opacity: .7;
 }
 
 .projectHeader {
@@ -49,8 +61,80 @@
   height: 30px;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 800px;
+  height: 80vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  padding: 2rem 1rem;
+  color: black;
+  border-radius: 5px;
+}
+
+.modalTitle {
+  padding-bottom: 1rem;
+}
+
+.modalDescription {
+  padding: 1rem 0;
+}
+
+.viewProjectButton {
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+  max-width: 140px;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+}
+
+.viewProjectButton:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.closeModalIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+}
+
+.closeModalIcon:hover {
+  opacity: .8;
+}
+
+.closeModalIcon svg {
+  background-color: black;
+  outline: none;
+  border-bottom-left-radius: 12px;
+}
+
 @media (max-width: 768px) {
   .project {
     flex-direction: column;
+  }
+
+  .modalContent {
+    max-width: 94%;
   }
 }

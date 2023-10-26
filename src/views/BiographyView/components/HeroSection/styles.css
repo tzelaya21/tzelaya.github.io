@@ -1,6 +1,23 @@
 .mainContainer {
   padding: 4rem 0;
-  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.leftColumnContent {
+  grid-column: 1/8;
+}
+
+.rightColumnContent {
+  grid-column: 9/13;
+  background-color: red;
+}
+
+.rightColumnContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .personDescription {
@@ -31,10 +48,17 @@
 @media (max-width: 992px) {
   .mainContainer {
     width: 100%;
+    grid-template-columns: 1fr;
+    gap: 4rem;
   }
 
   .personDescription {
     font-size: 1rem;
+  }
+
+  .leftColumnContent,
+  .rightColumnContent {
+    grid-column: unset;
   }
 }
 

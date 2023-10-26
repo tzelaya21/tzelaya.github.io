@@ -15,7 +15,7 @@ export default {
       sendEmail() {
         const subject = "Quote Request - " + this.name;
         const body = "Hello, I'm interested in getting a quote for your services.\n\n" + this.message;
-        const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:tzelaya2021@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
       }
     }
@@ -32,17 +32,14 @@ export default {
           </p>
           <p class="otherAccountsText">My other social accounts:</p>
           <div class="icons">
-            <a href="https://facebook.com/telmazelaya" target="_blank" class="icon">
-              <img src="@/assets/icons/facebookIcon.svg" alt="Facebook">
-            </a>
             <a href="https://twitter.com/telmazelaya" target="_blank" class="icon">
               <img src="@/assets/icons/twitterIcon.svg" alt="Twitter">
             </a>
             <a href="https://www.linkedin.com/in/telmazelaya" target="_blank" class="icon">
               <img src="@/assets/icons/linkedinIcon.svg" alt="Linkedin">
             </a>
-            <a href="https://instagram.com/telmazelaya" target="_blank" class="icon">
-              <img src="@/assets/icons/instagramIcon.svg" alt="Instagram">
+            <a href="https://www.github.com/tzelaya21" target="_blank" class="icon">
+              <img src="@/assets/icons/githubIcon.svg" alt="Github">
             </a>
           </div>
         </div>

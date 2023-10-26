@@ -3,7 +3,11 @@ export default {
   props: {
     onClick: {
       type: Function,
-      required: true
+      required: false
+    },
+    classes: {
+      type: String,
+      default: ''
     }
   }
 }

@@ -31,42 +31,42 @@ export default {
                 <h2>Telma <span class="text-color-primary">Zelaya</span></h2>
                 <ul class="links" :class="openHeader ? 'open' : undefined">
                     <li class="linkWrapper">
-                        <router-link to="/" class="link">
+                        <router-link @click="toggleHeader()" to="/" class="link">
                             <div :class="section === '/' && 'active'">
                                 home
                             </div>
                         </router-link>
                     </li>
                     <li class="linkWrapper">
-                        <router-link to="/biography" class="link">
+                        <router-link @click="toggleHeader()" to="/biography" class="link">
                             <div :class="section === '/biography' && 'active'">
                                 biography
                             </div>
                         </router-link>
                     </li>
                     <li class="linkWrapper">
-                        <router-link to="/hobbies" class="link">
+                        <router-link @click="toggleHeader()" to="/hobbies" class="link">
                             <div :class="section === '/hobbies' && 'active'">
                                 hobbies
                             </div>
                         </router-link>
                     </li>
                     <li class="linkWrapper">
-                        <router-link to="/projects" class="link">
+                        <router-link @click="toggleHeader()" to="/projects" class="link">
                             <div :class="section === '/projects' && 'active'">
                                 projects
                             </div>
                         </router-link>
                     </li>
                     <li class="linkWrapper">
-                        <router-link to="/photography" class="link">
+                        <router-link @click="toggleHeader()" to="/photography" class="link">
                             <div :class="section === '/photography' && 'active'">
                                 photography
                             </div>
                         </router-link>
                     </li>
                     <li class="linkWrapper">
-                        <router-link to="/contact" class="link">
+                        <router-link @click="toggleHeader()" to="/contact" class="link">
                             <div :class="section === '/contact' && 'active'">
                                 contact
                             </div>
