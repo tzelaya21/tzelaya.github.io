@@ -8,5 +8,5 @@ module.exports = defineConfig({
         .loader("vue-svg-inline-loader")
         .options({ /* ... */ });
   },
-  publicPath: '/tzelaya21.github.io/'
+  publicPath: process.env.NODE_ENV === 'production' ? '/tzelaya21.github.io/' : '/'
 })
