@@ -32,7 +32,7 @@ export default {
         </a>
       </div>
       <div class="rightColumnContent">
-        <img src="@/assets/images/landing-hero-image.webp" alt="Person Pic" />
+        <img src="@/assets/images/about-hero-image.webp" alt="Person Pic" />
       </div>
     </div>
   </section>
