@@ -4,7 +4,7 @@ import App from './App.vue'
 import './css/global.css'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("tzelaya21.github.io/"),
   // eslint-disable-next-line no-unused-vars
   scrollBehavior(to, from, savedPosition) {
     return { top: 0, behavior: 'smooth' }
