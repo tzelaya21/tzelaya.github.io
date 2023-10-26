@@ -35,4 +35,5 @@ npm run serve
 npm run build
 ```
 
-### Introduction
+### Github Deploy
+[Deploy Article](https://medium.com/@Roli_Dori/deploy-vue-cli-3-project-to-github-pages-ebeda0705fbd)
