@@ -1,5 +1,4 @@
-.mainContainer {
-  padding: 4rem 0;
+.heroContainer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
@@ -11,7 +10,6 @@
 
 .rightColumnContent {
   grid-column: 9/13;
-  background-color: red;
 }
 
 .rightColumnContent img {
@@ -46,7 +44,7 @@
 }
 
 @media (max-width: 992px) {
-  .mainContainer {
+  .heroContainer {
     width: 100%;
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -61,4 +59,3 @@
     grid-column: unset;
   }
 }
-

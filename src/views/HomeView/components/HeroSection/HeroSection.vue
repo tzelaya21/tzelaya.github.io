@@ -10,9 +10,10 @@ export default {
   <section class="heroContainer">
     <div class="leftColumnContent">
       <h1 class="personName">Hey there, I'm Telma-<br/>Frontend Developer & Nature Lover</h1>
-      <p class="personDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore
-        tenetur blanditiis praesentium, laborum distinctio modi hic odit nemo,
-        optio facilis nihil cumque sapiente dolore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, necessitatibus?
+      <p class="personDescription">Software Engineer with experience designing and developing mobile applications, IoT-based devices, and
+        hardware controllers from concept to deployment. Motivated self-starter focused on leveraging the latest
+        technologies and experience delivering youth computer engineering programs to create innovative technology
+        solutions that expand functionality and improve user experience.
       </p>
       <router-link to="/contact">
         <ButtonLayout :class="'letsTalkButton'">

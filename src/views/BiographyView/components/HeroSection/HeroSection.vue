@@ -9,7 +9,7 @@ export default {
 
 <template>
   <section>
-    <div class="mainContainer">
+    <div class="heroContainer">
       <div class="leftColumnContent">
         <SectionTitle>About Me</SectionTitle>
         <p class="personDescription">

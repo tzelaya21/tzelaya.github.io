@@ -50,49 +50,51 @@ export default {
 </script>
 
 <template>
-  <ContainerLayout>
-    <section class="mainContainer">
-      <SectionTitle>Here is what I've been working on</SectionTitle>
-      <div class="projectsGrid">
-        <div v-for="project in projects" :key="project.id" class="project">
-          <div class="projectImage" @click="toggleModal(project.id)">
-            <img :src="project.picture" alt="Project" loading="lazy" />
-          </div>
-          <div class="projectDetails">
-            <div class="projectHeader">
-              <h3 class="projectTitle" @click="toggleModal(project.id)">
-                {{ project.name }}
-              </h3>
-              <a :href="project.link" target="_blank" class="projectLink">
-                <img src="@/assets/icons/githubIcon.svg" alt="github" />
-              </a>
+  <main class="mainContainer">
+    <ContainerLayout>
+      <section>
+        <SectionTitle>Here is what I've been working on</SectionTitle>
+        <div class="projectsGrid">
+          <div v-for="project in projects" :key="project.id" class="project">
+            <div class="projectImage" @click="toggleModal(project.id)">
+              <img :src="project.picture" alt="Project" loading="lazy" />
             </div>
-            <p class="projectDesc">{{ project.description }}</p>
-            <p class="projectStack">
-              <strong>Made with: </strong>
-              {{ project.stack.join(', ') }}
-            </p>
+            <div class="projectDetails">
+              <div class="projectHeader">
+                <h3 class="projectTitle" @click="toggleModal(project.id)">
+                  {{ project.name }}
+                </h3>
+                <a :href="project.link" target="_blank" class="projectLink">
+                  <img src="@/assets/icons/githubIcon.svg" alt="github" />
+                </a>
+              </div>
+              <p class="projectDesc">{{ project.description }}</p>
+              <p class="projectStack">
+                <strong>Made with: </strong>
+                {{ project.stack.join(', ') }}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div v-if="showModal" class="modal">
-      <div class="modalContent">
-        <div class="closeModalIcon" @click="toggleModal(selectedProject.id)">
-          <img svg-inline src="../../assets/icons/crossIcon.svg" alt="Cancel" />
+      </section>
+      <div v-if="showModal" class="modal">
+        <div class="modalContent">
+          <div class="closeModalIcon" @click="toggleModal(selectedProject.id)">
+            <img svg-inline src="../../assets/icons/crossIcon.svg" alt="Cancel" />
+          </div>
+          <h2 class="modalTitle">{{ selectedProject.name }}</h2>
+          <img :src="selectedProject.picture" alt="Project" />
+          <p class="modalDescription">{{ selectedProject.description }}</p>
+          <p><strong>Made with:</strong> {{ selectedProject.stack.join(', ') }}</p>
+          <a :href="selectedProject.link" target="_blank">
+            <ButtonLayout :class="'viewProjectButton'">
+              View on Github
+            </ButtonLayout>
+          </a>
         </div>
-        <h2 class="modalTitle">{{ selectedProject.name }}</h2>
-        <img :src="selectedProject.picture" alt="Project" />
-        <p class="modalDescription">{{ selectedProject.description }}</p>
-        <p><strong>Made with:</strong> {{ selectedProject.stack.join(', ') }}</p>
-        <a :href="selectedProject.link" target="_blank">
-          <ButtonLayout :class="'viewProjectButton'">
-            View on Github
-          </ButtonLayout>
-        </a>
       </div>
-    </div>
-  </ContainerLayout>
+    </ContainerLayout>
+  </main>
   <CtaSection />
 </template>
 

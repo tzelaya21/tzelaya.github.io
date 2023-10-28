@@ -20,4 +20,12 @@
   height: 4px;
   background-color: #fff;
 }
+
+@media (max-width: 768px) {
+  .sectionTitle::after {
+    bottom: unset;
+    top: -14px;
+    height: 6px;
+  }
+}
 </style>

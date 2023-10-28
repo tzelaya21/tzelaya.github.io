@@ -23,8 +23,9 @@ export default {
 </script>
 
 <template>
+  <main class="mainContainer">
     <ContainerLayout>
-      <section class="mainContainer">
+      <section class="contentContainer">
         <div>
           <SectionTitle>Get a quote</SectionTitle>
           <p class="subtitle">
@@ -58,7 +59,8 @@ export default {
         </form>
       </section>
     </ContainerLayout>
-    <CtaSection />
+  </main>
+  <CtaSection />
 </template>
 
 <style scoped src="./styles.css"></style>

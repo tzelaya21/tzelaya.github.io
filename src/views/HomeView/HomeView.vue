@@ -10,9 +10,11 @@ export default {
 </script>
 
 <template>
+  <main>
     <ContainerLayout>
       <HeroSection />
       <QualitiesSection />
     </ContainerLayout>
-    <CtaSection />
+  </main>
+  <CtaSection />
 </template>

@@ -36,3 +36,9 @@
   width: 100%;
   aspect-ratio: 4/3;
 }
+
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 2rem 0;
+  }
+}

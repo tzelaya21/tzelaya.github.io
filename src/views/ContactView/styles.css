@@ -1,5 +1,8 @@
 .mainContainer {
   padding: 4rem 0;
+}
+
+.contentContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 4rem 1rem;
@@ -68,4 +71,10 @@
 .sendMailButton:hover {
   background-color: #1b2e43;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 2rem 0;
+  }
 }

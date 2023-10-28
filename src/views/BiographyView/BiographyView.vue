@@ -10,9 +10,13 @@ export default {
 </script>
 
 <template>
+  <main class="mainContainer">
     <ContainerLayout>
       <HeroSection />
       <WorkSection />
     </ContainerLayout>
     <CtaSection />
+  </main>
 </template>
+
+<style scoped src="./styles.css"></style>
