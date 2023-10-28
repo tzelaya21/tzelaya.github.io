@@ -5,7 +5,11 @@ import WorkSection from './components/WorkSection/WorkSection.vue';
 import CtaSection from '@/components/CtaSection.vue';
 
 export default {
-    components: { ContainerLayout, HeroSection, WorkSection, CtaSection},
+  name: 'BioGraphy',
+  components: { ContainerLayout, HeroSection, WorkSection, CtaSection},
+  created(){
+      document.title = "Biography | Telma"
+  }
 }
 </script>
 

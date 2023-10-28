@@ -72,6 +72,11 @@
   padding: 0 26px;
 }
 
+.myName {
+  text-decoration: none;
+  color: white;
+}
+
 .toggleIcon {
   display: flex;
   cursor: pointer;

@@ -4,21 +4,25 @@ import CtaSection from '@/components/CtaSection.vue';
 import SectionTitle from '@/components/SectionTitle.vue';
 
 export default {
-    components: { ContainerLayout, CtaSection, SectionTitle },
-    data() {
-      return {
-        name: "",
-        message: ""
-      };
-    },
-    methods: {
-      sendEmail() {
-        const subject = "Quote Request - " + this.name;
-        const body = "Hello, I'm interested in getting a quote for your services.\n\n" + this.message;
-        const mailtoLink = `mailto:tzelaya2021@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailtoLink;
-      }
+  name: 'ContactMe',
+  components: { ContainerLayout, CtaSection, SectionTitle },
+  data() {
+    return {
+      name: "",
+      message: ""
+    };
+  },
+  created(){
+    document.title = "Contact Me | Telma"
+  },
+  methods: {
+    sendEmail() {
+      const subject = "Quote Request - " + this.name;
+      const body = "Hello, I'm interested in getting a quote for your services.\n\n" + this.message;
+      const mailtoLink = `mailto:tzelaya2021@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
     }
+  }
 }
 </script>
 

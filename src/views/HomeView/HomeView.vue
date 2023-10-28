@@ -5,7 +5,11 @@ import QualitiesSection from './components/QualitiesSection/QualitiesSection.vue
 import CtaSection from '@/components/CtaSection.vue';
 
 export default {
-    components: { ContainerLayout, HeroSection, CtaSection, QualitiesSection },
+  name: "HomePage",
+  components: { ContainerLayout, HeroSection, CtaSection, QualitiesSection },
+  created(){
+    document.title = "Home | Telma"
+  }
 }
 </script>
 

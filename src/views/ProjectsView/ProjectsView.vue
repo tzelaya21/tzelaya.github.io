@@ -32,20 +32,24 @@ const projects = [
 ];
 
 export default {
-    components: { ContainerLayout, CtaSection, SectionTitle, ButtonLayout },
-    data() {
-      return {
-        projects,
-        showModal: false,
-        selectedProject: null,
-      };
+  name: 'ProjectsList',
+  components: { ContainerLayout, CtaSection, SectionTitle, ButtonLayout },
+  data() {
+    return {
+      projects,
+      showModal: false,
+      selectedProject: null,
+    };
+  },
+  methods: {
+    toggleModal(projectId) {
+      this.selectedProject = this.projects.find((project) => project.id === projectId);
+      this.showModal = !this.showModal;
     },
-    methods: {
-      toggleModal(projectId) {
-        this.selectedProject = this.projects.find((project) => project.id === projectId);
-        this.showModal = !this.showModal;
-      },
-    },
+  },
+  created(){
+    document.title = "Projects | Telma"
+  }
 }
 </script>
 

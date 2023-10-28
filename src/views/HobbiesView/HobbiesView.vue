@@ -47,32 +47,36 @@ const hobbies = [
 ];
 
 export default {
-    components: { ContainerLayout, CtaSection, SectionTitle },
-    data() {
-      return { hobbies }
-    }
+  name: 'HobbiesAndInterests',
+  components: { ContainerLayout, CtaSection, SectionTitle },
+  data() {
+    return { hobbies }
+  },
+  created(){
+    document.title = "Hobbies | Telma"
+  },
 }
 </script>
 
 <template>
-    <ContainerLayout>
-      <section class="mainContainer">
-        <SectionTitle>My Hobbies and Interests &#128526;</SectionTitle>
-        <p style="margin-bottom: 1rem; margin-top: -0.5rem;">You can talk to me on these topics all day.</p>
-        <div class="hobbiesGrid">
-          <div v-for="hobbie in hobbies" :key="hobbie.name" class="hobbie">
-            <div class="hobbieImage">
-              <img :src="hobbie.icon" alt="Hobbie" loading="lazy" />
-            </div>
-            <div class="hobbieDetails">
-              <h3 class="hobbieTitle">{{ hobbie.name }}</h3>
-              <p class="hobbieDesc">{{ hobbie.description }}</p>
-            </div>
+  <ContainerLayout>
+    <section class="mainContainer">
+      <SectionTitle>My Hobbies and Interests &#128526;</SectionTitle>
+      <p style="margin-bottom: 1rem; margin-top: -0.5rem;">You can talk to me on these topics all day.</p>
+      <div class="hobbiesGrid">
+        <div v-for="hobbie in hobbies" :key="hobbie.name" class="hobbie">
+          <div class="hobbieImage">
+            <img :src="hobbie.icon" alt="Hobbie" loading="lazy" />
+          </div>
+          <div class="hobbieDetails">
+            <h3 class="hobbieTitle">{{ hobbie.name }}</h3>
+            <p class="hobbieDesc">{{ hobbie.description }}</p>
           </div>
         </div>
-      </section>
-    </ContainerLayout>
-    <CtaSection />
+      </div>
+    </section>
+  </ContainerLayout>
+  <CtaSection />
 </template>
 
 <style scoped src="./styles.css"></style>

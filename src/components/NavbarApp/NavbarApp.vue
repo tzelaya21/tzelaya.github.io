@@ -28,7 +28,9 @@ export default {
     <nav class="navContainer">
         <ContainerLayout>
             <div class="contentContainer">
-                <h2>Telma <span class="text-color-primary">Zelaya</span></h2>
+                <router-link to="/" class="myName">
+                    <h2>Telma <span class="text-color-primary">Zelaya</span></h2>
+                </router-link>
                 <ul class="links" :class="openHeader ? 'open' : undefined">
                     <li class="linkWrapper">
                         <router-link @click="toggleHeader()" to="/" class="link">

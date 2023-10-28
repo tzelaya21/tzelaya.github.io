@@ -13,10 +13,14 @@ const photos = [
 ];
 
 export default {
-    components: { ContainerLayout, CtaSection, SectionTitle },
-    data() {
-      return { photos }
-    }
+  name: 'PhotoGraphy',
+  components: { ContainerLayout, CtaSection, SectionTitle },
+  data() {
+    return { photos }
+  },
+  created(){
+    document.title = "Photography | Telma"
+  }
 }
 </script>
 
